@@ -5,12 +5,18 @@
 
 Vamos primeiramente fazer uma breve introducao relacionado ao conceito que e o coracao da linguagem **Rust** que e justamente o **Ownership**, conceito este que esta diretamente ligado a como a memoria funciona ou melhor dizendo como manipulamos a memoria em runtime. Logo, este conceito esta diretamente ligado a **Stack** e **Heap**. Dentro do Ownership tambem, abordaremos o **Borrowing** e por fim vamos abordar o **Shadowing** que fecha um dos principais conceitos do Rust.
 
- Posteriormente, vamos falar sobre os exemplos abordados aqui para aprofundar um pouco mais e sair do nivel superficial.
+Posteriormente, vamos falar sobre os exemplos abordados aqui para aprofundar um pouco mais e sair do nivel superficial.
 
-## 📌 Conceito de Ownership
+## 🔧 Stack e Heap
+> Adicionar as anotacoes previamente feitas aqui
+
+## 📌 Conceito de Ownership - (Posse)
+- Cada valor tem um dono;
+- So pode ter um dono por vez;
+- Dono fora do escopo, valor sera eliminado
 
 
-### 🧪 Examplos:
+### 🧪 Exemplos:
 
 ```rust
     fn main() {
@@ -47,3 +53,5 @@ Vamos primeiramente fazer uma breve introducao relacionado ao conceito que e o c
 }
 ```
 
+## 🥇 License
+The [MIT License]() (MIT)
