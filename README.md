@@ -10,13 +10,27 @@ Posteriormente, vamos falar sobre os exemplos abordados aqui para aprofundar um 
 ## 🔧 Stack e Heap
 > Adicionar as anotacoes previamente feitas aqui
 
-## 📌 Conceito de Ownership - (Posse)
+## 🤝🏻 Shadowing
+> Adicionar aqui o conceito de shadowing
+
+## 🛠️ Conceito de Ownership - (Posse)
 - Cada valor tem um dono;
 - So pode ter um dono por vez;
 - Dono fora do escopo, valor sera eliminado
 
+## 🔨 Borrowing - (Ceder Posse) 
+> Adicionar aqui o conceito de borrowing
 
-### 🧪 Exemplos:
+## 🚨 Regras de referencias
+- So uma referencia mutavel por vez;
+- Referencias sempre serao validas;
+- Varias referencias imutaveis ao mesmo tempo
+
+So podemos ter uma referencia mutavel por vez por regras fundamentais do borrow checker:
+
+Logo, podemos ter ou varias referencias imutaveis (&T), ou uma unica referencia mutavel (&mut T)
+
+## 🧪 Exemplos:
 
 ```rust
     fn main() {
