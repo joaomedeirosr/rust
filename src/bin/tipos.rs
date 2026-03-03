@@ -89,6 +89,11 @@ fn array_type() {
     let first_month = month_names[0];
     let second_month = month_names[2];
  
+    /*
+    &str, na realidade e um slice, uma fatia do Array, o array e dificilmente usado pois tem valores fixos que nao podem ser alterados
+    ou seja eles sao "enviados" para a Stack que possui tamanho fixo e e mais rapida. Entretanto, na maior parte das vezes, vamos utilizar
+    Vetores (Vectors) que e um tipo dispooniabilizado pela Biblioteca padrao da linguagem
+    */ 
 
     println!("{}",first_month);
     println!("{}",second_month);

@@ -33,18 +33,23 @@ fn expressions_teste(){
 
     let y = {
         let x = 3;
-           x+1 // Expressao retorna um valor e armazena na variavel y
+           x+1 // Aqui temos um Expressao retorna um valor e armazena na variavel y, que sera retornada no final do bloco
     };
 
     println!("O valor de y e : {}", y);
 }
 
 // Informo o valor do parametro e do retorno
-fn soma_um(x:i32) -> i32{
+fn soma_um(x:i32) -> i32 {
      x + 1
+
 }
 
-// Posso fazer esse tipo de declaracao, que e semelhante ao pass do Python, mas isso e apenas algo explicito porque em Rust o escopo vazio ja e valido
+/*Posso fazer esse tipo de declaracao com o parenteses (), que e semelhante ao pass do Python, 
+mas isso e apenas algo explicito porque em Rust o escopo vazio ja e valido*/ 
+fn empty_func() {
+    ()
+}
 
 
 /*
