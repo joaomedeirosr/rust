@@ -1,5 +1,3 @@
-use std::array;
-
 fn main() {
     // Tipo primitivo int (signed (i) e unsigned (u))
     let age : i8 = 10;
@@ -28,7 +26,7 @@ fn main() {
     array_type();
 }
 
-fn operations(){
+fn operations() {
     let soma = 5 + 10;
 
     println!("{}",soma);
@@ -46,14 +44,14 @@ fn operations(){
     println!("{}",resto);
 }
 
-fn bolleans(){
+fn bolleans() {
     let t = true;
     println!("{}",t);
     let f = false;
     println!("{}",f);
 }
 
-fn char_type(){
+fn char_type() {
     let c = 'z';
     println!("{}",c);
 
@@ -64,7 +62,7 @@ fn char_type(){
     println!("{}",heart_cat);
 }
 
-fn coumpound_types(){
+fn coumpound_types() {
     // Rust tem dois tipos compostos tuplas e vetores
     let tup = (500, 6.4, 1);
     println!("{:?}",tup); // Utilizado para interpolar valores de colecoes
@@ -82,9 +80,17 @@ fn coumpound_types(){
     println!("{}",five_hundred);
 }
 
-fn array_type(){
+fn array_type() {
     // Array type no Rust deve necessariamente, possuir todos os elementos do mesmo tipo diferente da Tupla e possuem tamanho fixo nao pode aumentar de tamanho
+    let months = [1,2,3,4,5];
+    println!("{:?}",months);
 
-    let meses = [1,2,3,4,5];
-    println!("{:?}",meses);
+    let month_names = ["January","Febreuary","March","April","May","June","July","August","September","October","November","December",];
+    let first_month = month_names[0];
+    let second_month = month_names[2];
+ 
+
+    println!("{}",first_month);
+    println!("{}",second_month);
+
 }
